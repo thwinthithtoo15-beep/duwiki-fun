@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duwiki Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8y0xKfN2nYx04n6k9Q5W2I1q1dP5rNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="min-h-screen bg-slate-100 text-slate-900">
+    <header class="border-b border-slate-200 bg-white">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-3">
+          <div class="grid h-10 w-10 place-items-center rounded-md bg-slate-900 text-sm font-bold text-white">LOGO</div>
+          <div>
+            <h1 class="text-lg font-semibold">Duwiki</h1>
+            <p class="text-sm text-slate-500">GitHub-style workspace</p>
+          </div>
+        </div>
+        <nav class="w-full overflow-x-auto sm:w-auto">
+          <ul class="flex min-w-max items-center gap-2 text-sm font-medium text-slate-600">
+            <li><a class="inline-flex items-center gap-2 rounded-md px-3 py-2 hover:bg-slate-100" href="#"><i class="fa-regular fa-bookmark"></i>Wiki</a></li>
+            <li><a class="inline-flex items-center gap-2 rounded-md px-3 py-2 hover:bg-slate-100" href="#"><i class="fa-regular fa-circle-dot"></i>Issue</a></li>
+            <li><a class="inline-flex items-center gap-2 rounded-md px-3 py-2 hover:bg-slate-100" href="#"><i class="fa-regular fa-comments"></i>Discussion</a></li>
+            <li><a class="inline-flex items-center gap-2 rounded-md px-3 py-2 hover:bg-slate-100" href="#"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+            <li><a class="inline-flex items-center gap-2 rounded-md px-3 py-2 hover:bg-slate-100" href="#"><i class="fa-solid fa-bolt"></i>Action</a></li>
+            <li><a class="inline-flex items-center gap-2 rounded-md px-3 py-2 hover:bg-slate-100" href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto grid max-w-7xl gap-6 px-4 py-6 lg:grid-cols-3">
+      <section class="rounded-xl border border-slate-200 bg-white p-6 lg:col-span-2">
+        <h2 class="mb-2 text-xl font-semibold">Wiki Dashboard</h2>
+        <p class="text-sm text-slate-600">
+          Welcome to Duwiki. Create pages, group them into categories, and decorate them with custom HTML/script blocks.
+        </p>
+      </section>
+
+      <section class="space-y-6">
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <h2 class="mb-4 text-lg font-semibold">Login</h2>
+          <form class="space-y-3" action="#">
+            <div>
+              <label class="mb-1 block text-sm font-medium text-slate-700" for="login-email">Email</label>
+              <input class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-slate-500 focus:outline-none" id="login-email" type="email" autocomplete="email" required placeholder="you@example.com" />
+            </div>
+            <div>
+              <label class="mb-1 block text-sm font-medium text-slate-700" for="login-password">Password</label>
+              <input class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-slate-500 focus:outline-none" id="login-password" type="password" autocomplete="current-password" required placeholder="••••••••" />
+            </div>
+            <button class="w-full rounded-md bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700" type="submit">Sign in</button>
+          </form>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white p-6">
+          <h2 class="mb-4 text-lg font-semibold">Sign Up</h2>
+          <form class="space-y-3" action="#">
+            <div>
+              <label class="mb-1 block text-sm font-medium text-slate-700" for="signup-name">Name</label>
+              <input class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-slate-500 focus:outline-none" id="signup-name" type="text" autocomplete="name" required />
+            </div>
+            <div>
+              <label class="mb-1 block text-sm font-medium text-slate-700" for="signup-email">Email</label>
+              <input class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-slate-500 focus:outline-none" id="signup-email" type="email" autocomplete="email" required />
+            </div>
+            <div>
+              <label class="mb-1 block text-sm font-medium text-slate-700" for="signup-password">Password</label>
+              <input class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-slate-500 focus:outline-none" id="signup-password" type="password" autocomplete="new-password" required />
+            </div>
+            <div>
+              <label class="mb-1 block text-sm font-medium text-slate-700" for="signup-work">Your work</label>
+              <input class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-slate-500 focus:outline-none" id="signup-work" type="text" required />
+            </div>
+            <div>
+              <label class="mb-1 block text-sm font-medium text-slate-700" for="signup-use">For use</label>
+              <input class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-slate-500 focus:outline-none" id="signup-use" type="text" required />
+            </div>
+            <button class="w-full rounded-md bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-500" type="submit">Create account</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
